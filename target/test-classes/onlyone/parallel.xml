@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite  name="Suite" parallel="tests" thread-count="2">
+<listeners>
+<listener class-name="onlyone.MyListener"></listener>
+</listeners>
+  <test name="TestEdge">
+   <parameter name="Browser" value="Edge"></parameter>
+    <classes>
+      <class name="onlyone.TC2318922"/>
+    </classes>
+  </test> 
+  <test name="TestChrome">
+  <parameter name="Browser" value="Chrome"></parameter>
+    <classes>
+      <class name="onlyone.TC2318922"/>
+    </classes>
+  </test> 
+</suite> 
